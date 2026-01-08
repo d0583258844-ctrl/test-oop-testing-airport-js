@@ -6,15 +6,15 @@ export class Flight {
     this.flightName = flightName;
     this.airline = airline;
     this.flightNumber = flightNumber;
-    this.Ticketslist = [];
+    this.Ticketslist = [];  
   }
 
-  checkArguments() {
-    if (!this.flightName || !this.flightNumber || !this.airline) {
+  checkArguments(flightNumber, airline) {
+    if (!flightNumber || !airline) {
       return "One or more requerd filed misseing";
     }
-    if (typeof this.flightNumber !== "number") {
-      return "Flight number must be a number!";
+    if (typeof this.flightNumber !== "number" || typeof this.maximumNumberOfPassengers !== "number") {
+      return "Flight number and maximum number of passengers both must be a number!";
     }
   }
 
@@ -40,9 +40,9 @@ export class Flight {
   }
 }
 
-// const fligth = new Flight("aero", "United", 4545460, 8);
-// console.log(fligth);
-// console.log(fligth.createFlight());
+const fligth = new Flight("Buda", "United", 4545460, 8);
+console.log(fligth);
+console.log(fligth.createFlight());
 
 // Each flight must have:
 //  Flight name
