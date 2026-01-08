@@ -13,8 +13,9 @@ class AirportSystem {
     const flight_22 = flight_2.createFlight();
     const flight_33 = flight_3.createFlight();
     this.#flights.push(flight_11, flight_22, flight_33);
-    return this.#flights;
   }
+
+
 }
 
 // ● Creates 3 flights (set/ask or randomize needed data) :            I did
@@ -23,5 +24,5 @@ class AirportSystem {
 // ○ 10% VIP tickets
 // ● Stores all flights inside the airport
 
-const air = new AirportSystem();
-console.log(air.createFlights());
+// const air = new AirportSystem();
+// console.log(air.createFlights());
