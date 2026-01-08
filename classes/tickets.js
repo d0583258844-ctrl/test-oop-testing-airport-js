@@ -6,7 +6,7 @@ export class Tickets {
   }
 }
 
-class VipTicket extends Tickets {
+export class VipTicket extends Tickets {
   constructor(name, price) {
     super(name, price);
     extra = ["Free alcohol", "Free food", "Hot towels"];

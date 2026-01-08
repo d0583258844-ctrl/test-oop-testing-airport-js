@@ -40,23 +40,3 @@ export class Flight {
     return;
   }
 }
-
-const fligth = new Flight("Israel", "United", 909, 8);
-console.log(fligth.checkArguments());
-console.log("====");
-console.log(fligth.createFlight());
-// console.log(fligth.checkArguments());
-
-// Each flight must have:
-//  Flight name
-//  Airline
-//  Flight number
-//  Maximum number of passengers did constant
-//  Regular ticket price   prices with randome
-//  VIP ticket price
-//  Tickets list
-
-//  The list size must match the maximum number of
-// passengers
-
-//  At the start, tickets have no owner name
