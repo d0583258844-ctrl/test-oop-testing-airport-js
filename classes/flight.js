@@ -40,9 +40,9 @@ export class Flight {
   }
 }
 
-const fligth = new Flight("Buda", "United", 4545460, 8);
-console.log(fligth);
-console.log(fligth.createFlight());
+// const fligth = new Flight("Buda", "United", 4545460, 8);
+// console.log(fligth);
+// console.log(fligth.createFlight());
 
 // Each flight must have:
 //  Flight name
